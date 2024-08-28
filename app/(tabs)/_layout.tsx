@@ -17,6 +17,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
+          tabBarStyle: { display: 'none' }, // Hide tab bar on Home screen
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
@@ -26,6 +27,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="explore"
         options={{
+          tabBarStyle: { display: 'none' }, // Hide tab bar on Home screen
           title: 'Explore',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
